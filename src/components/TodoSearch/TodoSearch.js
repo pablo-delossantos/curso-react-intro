@@ -1,8 +1,17 @@
-import "./TodoSearch.css"
+import "./TodoSearch.css";
 
 function TodoSearch() {
   return (
-    <input className="TodoSearch" placeholder="Cortar cebolla" />
+    <input
+      className="TodoSearch"
+      id="todosearch"
+      placeholder="Cortar cebolla"
+      onChange={(event) => {
+        console.log("Escribiste en el TodoSearch");
+        console.log(event);
+        console.log(event.target.value);
+      }}
+    />
   );
 }
 

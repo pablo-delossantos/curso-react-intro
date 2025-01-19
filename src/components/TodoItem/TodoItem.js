@@ -8,13 +8,13 @@ function TodoItem(props) {
           props.completed && "Icon-check--active"
         } `}
       >
-        <i class="fa-solid fa-check" />
+        <i className="fa-solid fa-check" />
       </span>
       <p className={`TodoItem-p ${props.completed && "TodoItem-p--complete"}`}>
         {props.text}
       </p>
       <span className="Icon Icon-delete">
-        <i class="fa-solid fa-circle-xmark" />
+        <i className="fa-solid fa-circle-xmark" />
       </span>
     </li>
   );
